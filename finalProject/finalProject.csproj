@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E6C9CC12-CF8A-42A0-8510-86F8FB711A0D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>groupAssignment</RootNamespace>
+    <AssemblyName>finalProject</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Oracle.DataAccess, Version=2.121.1.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=x86" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\Alert.cs" />
+    <Compile Include="chartsManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="chartsManager.Designer.cs">
+      <DependentUpon>chartsManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\DataBase.cs" />
+    <Compile Include="frm_Alerts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Alerts.Designer.cs">
+      <DependentUpon>frm_Alerts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\ChartControl.cs" />
+    <Compile Include="Classes\Data.cs" />
+    <Compile Include="frm_changePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_changePassword.Designer.cs">
+      <DependentUpon>frm_changePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_chart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_chart.Designer.cs">
+      <DependentUpon>frm_chart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_LiveNews.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_LiveNews.Designer.cs">
+      <DependentUpon>frm_LiveNews.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_LiveQuotes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_LiveQuotes.Designer.cs">
+      <DependentUpon>frm_LiveQuotes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_mainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_mainForm.Designer.cs">
+      <DependentUpon>frm_mainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Login.Designer.cs">
+      <DependentUpon>frm_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Candle.cs" />
+    <Compile Include="frm_Registration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Registration.Designer.cs">
+      <DependentUpon>frm_Registration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_restorePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_restorePassword.Designer.cs">
+      <DependentUpon>frm_restorePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GoogleFinanceApi%28Modified%29\DataProcessor.cs" />
+    <Compile Include="GoogleFinanceApi%28Modified%29\DownloadURIBuilder.cs" />
+    <Compile Include="Classes\MovingAverage.cs" />
+    <Compile Include="frm_News.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_News.Designer.cs">
+      <DependentUpon>frm_News.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Classes\User.cs" />
+    <EmbeddedResource Include="chartsManager.resx">
+      <DependentUpon>chartsManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Alerts.resx">
+      <DependentUpon>frm_Alerts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_changePassword.resx">
+      <DependentUpon>frm_changePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_chart.resx">
+      <DependentUpon>frm_chart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_LiveNews.resx">
+      <DependentUpon>frm_LiveNews.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_LiveQuotes.resx">
+      <DependentUpon>frm_LiveQuotes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_mainForm.resx">
+      <DependentUpon>frm_mainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_News.resx">
+      <DependentUpon>frm_News.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Login.resx">
+      <DependentUpon>frm_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Registration.resx">
+      <DependentUpon>frm_Registration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_restorePassword.resx">
+      <DependentUpon>frm_restorePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\conOK.png" />
+    <None Include="Resources\conLOST.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
